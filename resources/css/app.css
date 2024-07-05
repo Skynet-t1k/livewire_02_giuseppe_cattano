@@ -1,0 +1,62 @@
+@import 'bootstrap';
+
+
+.bg-image{
+    display: flex;
+    flex-direction: column;
+    background-image: url('/public/img/spiaggia.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+}
+
+.mt-450{
+    margin-top: 450px;
+}
+
+.mt-150{
+    margin-top: 150px;
+}
+
+.form-container{
+    background-color: #00619C;
+    max-width: 520px;
+ 
+}
+
+.nav-link{
+    transition: 0s;
+}
+
+.nav-link:hover{
+    background-color: #00619C;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.nav-margin{
+    margin: 0px 50px 0px 50px;
+}
+
+.active{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .form-container{
+        
+        width: 90%;
+        
+    }
+
+    .nav-margin{
+        margin: 0px;
+    }
+    
+}
