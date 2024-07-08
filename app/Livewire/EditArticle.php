@@ -54,14 +54,15 @@ class EditArticle extends Component
         ];
 
         if ($this->image) {
+
             if ($this->article->image && $this->article->image !== 'images/default_img.png') {
                 Storage::disk('public')->delete($this->article->image);
             }
-            if ($this->article->image !== 'images/default_img.png') {
-                $data['image'] = $this->image->store('images', 'public');
-            } else {
-                $data['image'] = 'images/default_img.png';
-            }
+
+            $data['image'] = $this->image->store('images', 'public');
+        } else {
+
+            $data['image'] = 'images/default_img.png';
         }
 
         $this->article->update($data);

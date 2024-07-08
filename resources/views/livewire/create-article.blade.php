@@ -35,6 +35,8 @@
     <div class="m-1 p-1">
       @if ($image) 
       <img class="img-fluid rounded-3" src="{{$image->temporaryUrl()}}">
+      @else
+      <img class="img-fluid rounded-3" src="/images/default_img.png">
       @endif
     </div>
         <button type="submit" class="btn btn-dark rounded-3">Salva</button>

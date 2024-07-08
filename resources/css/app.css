@@ -26,7 +26,6 @@
 .form-container{
     background-color: #00619C;
     max-width: 520px;
- 
 }
 
 .nav-link{
@@ -50,9 +49,7 @@
 @media only screen and (max-width: 500px) {
 
     .form-container{
-        
-        width: 90%;
-        
+            width: 90%;
     }
 
     .nav-margin{
