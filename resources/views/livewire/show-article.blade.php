@@ -2,7 +2,7 @@
 
    <div class="container d-flex justify-content-center mt-150">
     <div class="card" style="width: 28rem;">
-        <img src="{{ Storage::url($article->image)}}" class="card-img-top" alt="article image">
+        <img src="{{ $article->image ? Storage::url($article->image) : '/images/default_img.png'}}" class="card-img-top" alt="article image">
         <div class="card-body">
           <h4 class="card-title">{{$article->title}}</h4>
           <h6 class="card-title">{{$article->subtitle}}</h6>

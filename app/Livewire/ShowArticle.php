@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Storage;
 class ShowArticle extends Component
 
 {
+    public $article;
+
     public function destroy(Article $article)
     {
         if ($article->image && $article->image !== 'images/default_img.png') {
@@ -20,7 +22,7 @@ class ShowArticle extends Component
     }
 
 
-    public $article;
+
 
     public function render()
     {
